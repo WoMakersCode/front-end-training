@@ -1,3 +1,5 @@
+# Estrutura de uma página Web (revisão)
+
 A estrutura básica de um documento HTML é composta por três tags (`html`, `head` e `body`), deve estar presente em todos os documentos, e seguir exatamente a seguinte sequência:
 
 ![](http://www.educacaopublica.rj.gov.br/oficinas/informatica/html/estrutura/img/01.gif)
@@ -41,3 +43,52 @@ Definição: sempre contida entre `<head>` e `</head>` define o título do docum
 
 Definição: corpo do documento. Entre `<body>` e `</body>` está o que vai, efetivamente, ser exibido na tela do navegador.
 **Atributos:** você pode adicionar os atributos `class` e `id`, para proporcionar manipulação de [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via JavaScript ou aplicar estilos de CSS. É possível adicionar outros elementos, mas por questões de semântica e qualidade de código, indicamos que restrinja a implementação somente de `class` e `id`.
+
+## Tabelas (revisão)
+
+Através de linhas e colunas, as tabelas abrem inúmeras possibilidades de distribuição dos elementos em um documento, permitindo melhor aproveitamento do espaço, além de tornar sua visualização mais agradável que simples textos corridos. São, portanto, importantes para o trabalho de diagramação e desenho de uma página HTML.
+
+DicaAbaixo, um exemplo da aparência final dos elementos distribuídos em cada célula de uma tabela e, em seguida, sua real estrutura de linhas e colunas (em vermelho).
+
+![](http://www.educacaopublica.rj.gov.br/oficinas/informatica/html/tabelas/img/02.gif)
+
+São três as tags básicas para a montagem de uma tabela: `<table>`, que abre a tabela e indica suas características (borda, etc). `<tr>`, que define linha e `<td>`, cada uma das células de uma linha. Todas elas devem ser finalizadas, nunca esquecendo da hierarquia que rege abertura e fechamento de todas as tags: as que foram abertas primeiro, devem ser fechadas primeiro.
+
+* `<table>` e `</table>`
+
+Definição: Indica o início da tabela. Os atributos definidos dentro dessa tag valem para toda a tabela.
+
+**Atributos:**
+
+width =	largura da tabela (em pixels ou porcentagem)
+
+height =	altura da tabela (em pixels ou porcentagem)
+
+border =	espessura da borda (em pixels). Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+cellspacing =	espaço entre duas células (pixels). Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+cellpadding =	espaço entre o conteúdo da célula e sua borda (pixels). Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+bordercolor =	cor da borda. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+bgcolor =	cor de fundo para toda a tabela. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+background =	define uma imagem de fundo para a tabela. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+align =	controla o alinhamento da tabela (não de seu conteúdo). Valores: left|right|center. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+
+
+* `<tr>` e `</tr>`
+
+Definição: indicam abertura e encerramento de linha de tabela. Seus atributos valem para toda a linha. Só podem ser usadas dentro da tag `<table>`.
+
+**Atributos:**
+
+align =	controla o alinhamento horizontal do conteúdo em todas as células da linha. Valores: left|right|center. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+valign =	controla o alinhamento vertical do conteúdo em todas as células da linha. Valores: top | middle | bottom. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+bgcolor =	define a cor de fundo de toda a linha. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+background =	define uma imagem de fundo de toda a linha `<td>` e `</td>`. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
