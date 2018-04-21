@@ -158,9 +158,9 @@ nowrap =	indica que o texto contido na célula não deve receber quebra automát
 ```html
 <table border="1"> <!-- estamos adicionando o border aqui para que você possa visualizar a junção das linhas e colunas, seguindo as regras definidas no rowspan (união/merge de linhas) e colspan(união/merge de coluna)
     <tr>
-        <td colspan="2">L1 C2 (unindo a "C2")</td>
-        <td></td>
-        <td></td>
+        <td colspan="2">L1 C1 (unindo a "C2")</td>
+        <td>L1 C2</td>
+        <td>L1 C3</td>
     </tr>
      </tr>
         <td>L2 C1</td>
@@ -171,13 +171,13 @@ nowrap =	indica que o texto contido na célula não deve receber quebra automát
      </tr>
         <td>L2 C1</td>
         <td>L2 C2</td>
-        <td rowspan="2">L2 C3</td>
-        <td>L2 C2</td>
+        <td rowspan="2">L2 e L3 C3</td>
+        <td>L2 C4</td>
     </tr>
      </tr>
         <td>L2 C1</td>
-        <td>L2 C2</td>
         <td>L2 C3</td>
+        <td>L2 C4</td>
     </tr>
 </table>
 ```
