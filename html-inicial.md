@@ -181,3 +181,50 @@ nowrap =	indica que o texto contido na célula não deve receber quebra automát
     </tr>
 </table>
 ```
+
+**Crie uma página HTML, copie o código abaixo e complete a newsletter**
+
+![image](https://user-images.githubusercontent.com/2198735/39028059-375f5f42-442b-11e8-9da4-29b2b5893f03.png)
+
+
+```
+<table with="100%">
+        <tbody>
+            <tr bgcolor="green">
+                <td align="left">AUGUST 2018</td>
+                <td align="right">ISSUE 6</td>
+            </tr>
+            <tr bgcolor="pink" align="center">
+                <td colspan="2"><h1>Título da Newsletter</h1><span>frase da newsletter</span></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <strong>TÍTULO DOS CONTEÚDOS</strong> <br/>
+                    <strong>TÍTULO DO ITEM</strong><br/>
+                    <span>01</span><br/>
+                    <strong>TÍTULO DO ITEM</strong><br/>
+                    <span>02</span><br/>
+                    <strong>TÍTULO DO ITEM</strong><br/>
+                    <span>03</span><br/>
+                </td>
+                <td>
+                    <img src="https://www.skinnerspetfoods.co.uk/wp-content/uploads/2017/04/puppypacks-lifestyle-700x649.jpg" />
+                </td>
+            </tr>
+            <tr bgcolor="green">
+                <td colspan="2" align="left">
+                    <strong>Título do local</strong><br/>
+                    <span>Textinho de descrição do título</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><p>Lorem ipsum dolor sit amet, te per minim aeterno, sit duis nostro rationibus ex. Ad agam unum numquam vel, graecis torquatos duo eu. Dicit prompta intellegebat cum et, eu eum nostro veritus, impetus admodum mea id. Id choro soluta essent pro, saepe ponderum theophrastus usu at, cu omittam deserunt adipiscing has.</p></td>
+                <td align="left"></td>
+            </tr>
+            <tr bgcolor="green">
+                <td align="left"></td>
+                <td align="right"></td>
+            </tr>
+        </tbody>
+    </table>
+```
