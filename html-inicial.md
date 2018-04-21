@@ -10,6 +10,7 @@ O resultado será:
 <!DOCTYPE html>
 <html>
     <head>
+        <title></title>
     </head>
 
     <body>
