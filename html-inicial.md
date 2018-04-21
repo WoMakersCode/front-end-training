@@ -92,3 +92,27 @@ valign =	controla o alinhamento vertical do conteúdo em todas as células da li
 bgcolor =	define a cor de fundo de toda a linha. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
 
 background =	define uma imagem de fundo de toda a linha `<td>` e `</td>`. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing**.
+
+* `<td>` e `</td>`
+
+Definição: indicam a abertura e encerramento de cada célula de uma linha. Só podem ser usadas entre `<tr>` e `</td>`. Não é recomendável deixar uma `<td>` sem conteúdo.
+
+**Atributos:**
+
+align =	alinhamento horizontal do conteúdo da célula. Valores: left|right|center. Default: left. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+valign =	alinhamento vertical do conteúdo da célula. Valores: top | middle | bottom. Default: middle. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+colspan =	define o número de células horizontais unidas (mescladas). Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+rowspan =	define o número de células verticais unidas (mescladas).
+
+bgcolor =	cor de fundo da célula. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+background =	define uma imagem de fundo para a célula. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+width =	largura da célula. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+height =	altura da célula. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+nowrap =	indica que o texto contido na célula não deve receber quebra automática de linha. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
