@@ -116,3 +116,68 @@ width =	largura da célula. Evite utilizar este atributo, pois você pode defini
 height =	altura da célula. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
 
 nowrap =	indica que o texto contido na célula não deve receber quebra automática de linha. Evite utilizar este atributo, pois você pode definir isso via CSS. Esse atributo é recomendado **somente na programação de e-mails marketing.**
+
+
+### Prática de Tabelas
+
+![image](https://user-images.githubusercontent.com/2198735/39086552-962ff236-4569-11e8-8c29-5f49068b66a5.png)
+
+**Exemplo 1**
+
+```html 
+<table> <!-- abertura da table -->
+    <tr> <!-- abertura da linha da tabela -->
+        <td>L1 C1</td> <!-- criação da coluna dentro da linha da tabela -->
+        <td>L1 C2</td>
+        <td>L1 C3</td>
+        <td>L1 C4</td>
+    </tr>
+        <td>L2 C1</td>
+        <td>L2 C2</td>
+        <td>L2 C3</td>
+        <td>L2 C4</td>
+    </tr>
+    <tr>
+        <td>L3 C1</td>
+        <td>L3 C2</td>
+        <td>L3 C3</td>
+        <td>L3 C4</td>
+    </tr>
+        <td>L4 C1</td>
+        <td>L4 C2</td>
+        <td>L4 C3</td>
+        <td>L4 C4</td>
+    </tr>
+</table>
+```
+
+**Exemplo 2**
+
+![image](https://user-images.githubusercontent.com/2198735/39086708-68370970-456c-11e8-9213-28fb7940eac2.png)
+
+```html
+<table border="1"> <!-- estamos adicionando o border aqui para que você possa visualizar a junção das linhas e colunas, seguindo as regras definidas no rowspan (união/merge de linhas) e colspan(união/merge de coluna)
+    <tr>
+        <td colspan="2">L1 C2 (unindo a "C2")</td>
+        <td></td>
+        <td></td>
+    </tr>
+     </tr>
+        <td>L2 C1</td>
+        <td>L2 C2</td>
+        <td>L2 C3</td>
+        <td>L2 C4</td>
+    </tr>
+     </tr>
+        <td>L2 C1</td>
+        <td>L2 C2</td>
+        <td rowspan="2">L2 C3</td>
+        <td>L2 C2</td>
+    </tr>
+     </tr>
+        <td>L2 C1</td>
+        <td>L2 C2</td>
+        <td>L2 C3</td>
+    </tr>
+</table>
+```
